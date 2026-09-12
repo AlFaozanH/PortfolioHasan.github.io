@@ -1,4 +1,4 @@
-/* ---------- General Settings ---------- */
+
 
 * {
     margin: 0;
@@ -17,7 +17,8 @@ body {
     color: #222;
 }
 
-/* ---------- Navigation ---------- */
+
+
 
 header {
     background-color: #111827;
@@ -53,7 +54,9 @@ header {
     color: #60a5fa;
 }
 
-/* ---------- Home ---------- */
+
+
+
 
 .home {
     min-height: 90vh;
@@ -127,7 +130,9 @@ header {
     margin-bottom: 15px;
 }
 
-/* ---------- Common Section ---------- */
+
+
+
 
 .section {
     width: 90%;
@@ -142,7 +147,9 @@ header {
     margin-bottom: 40px;
 }
 
-/* ---------- About ---------- */
+
+
+
 
 .about-box {
     background-color: white;
@@ -155,7 +162,9 @@ header {
     margin-bottom: 15px;
 }
 
-/* ---------- Projects ---------- */
+
+
+
 
 .project-container {
     display: grid;
@@ -180,7 +189,8 @@ header {
     margin-bottom: 10px;
 }
 
-/* ---------- Skills ---------- */
+
+
 
 .skills-box {
     background-color: white;
@@ -234,7 +244,9 @@ header {
     margin-top: 6px;
 }
 
-/* ---------- Contact ---------- */
+
+
+
 
 .contact-container {
     display: grid;
@@ -288,7 +300,8 @@ header {
     background-color: #1d4ed8;
 }
 
-/* ---------- Footer ---------- */
+
+
 
 footer {
     background-color: #111827;
@@ -297,7 +310,8 @@ footer {
     padding: 20px;
 }
 
-/* ---------- Responsive Design ---------- */
+
+
 
 @media (max-width: 800px) {
 
