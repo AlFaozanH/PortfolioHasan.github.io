@@ -25,13 +25,11 @@ header {
 }
 
 .navbar {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    min-height: 70px;
-    display: flex;
-     justify-content: center;
-     align-items: center;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar h2 {
