@@ -1,359 +1,448 @@
-
+/* =========================================================
+   RESET / DEFAULT STYLES
+   Removes default browser spacing and makes sizing easier
+   ========================================================= */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;              /* Removes default margin */
+    padding: 0;             /* Removes default padding */
+    box-sizing: border-box; /* Includes padding and border inside width/height */
 }
 
+/* Enables smooth scrolling when clicking navigation links */
 html {
     scroll-behavior: smooth;
 }
 
+/* General styles for the entire webpage */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f7fb;
-    color: #222;
+    font-family: Arial, sans-serif; /* Sets the font */
+    line-height: 1.6;               /* Controls spacing between lines */
+    background-color: #f5f7fb;      /* Light background color */
+    color: #222;                    /* Default text color */
 }
 
 
-
+/* =========================================================
+   HEADER / NAVIGATION BAR
+   Controls the dark header and navigation menu
+   ========================================================= */
 
 header {
-    background-color: #111827;
+    background-color: #111827; /* Dark background for header */
 }
 
+/* Main navigation container */
 .navbar {
-  width: 100%;
-  min-height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;                /* Takes the full screen width */
+    min-height: 70px;           /* Minimum height of navbar */
+    display: flex;              /* Places items in a row */
+    justify-content: center;    /* Centers items horizontally */
+    align-items: center;        /* Centers items vertically */
 }
 
+/* Website name / logo */
 .navbar h2 {
-    color: white;
+    color: white;               /* Makes logo text white */
 }
 
+/* Navigation list */
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+    list-style: none;           /* Removes bullet points */
+    display: flex;              /* Places links in a row */
+    gap: 25px;                  /* Adds space between links */
 }
 
+/* Navigation links */
 .navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    color: white;               /* Link text color */
+    text-decoration: none;      /* Removes underline */
+    font-weight: bold;          /* Makes links bold */
 }
 
+/* Navigation link when mouse is placed over it */
 .navbar a:hover {
-    color: #60a5fa;
+    color: #60a5fa;             /* Changes link color on hover */
 }
 
 
-
-
+/* =========================================================
+   HOME / HERO SECTION
+   The main introduction section of the portfolio
+   ========================================================= */
 
 .home {
-    min-height: 78vh;
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-     gap: 50px;
+    min-height: 78vh;           /* Makes section almost full screen height */
+    width: 90%;                 /* Uses 90% of available width */
+    max-width: 1000px;          /* Prevents content from becoming too wide */
+    margin: auto;                /* Centers the section */
+    display: flex;              /* Places text and image side by side */
+    justify-content: space-between; /* Puts space between text and image */
+    align-items: center;        /* Vertically centers the content */
+    gap: 50px;                  /* Space between text and image */
 }
 
+/* Container for the introduction text */
 .home-text {
-    max-width: 650px;
+    max-width: 650px;            /* Prevents text from becoming too wide */
 }
 
+/* Small heading above the main title */
 .small-title {
-    color: #2563eb;
-    font-weight: bold;
-    margin-bottom: 10px;
+    color: #2563eb;             /* Blue text */
+    font-weight: bold;           /* Makes text bold */
+    margin-bottom: 10px;         /* Space below the text */
 }
 
+/* Main heading in the home section */
 .home h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
+    font-size: 45px;             /* Large heading size */
+    margin-bottom: 15px;         /* Space below heading */
 }
 
+/* Highlighted part of the main heading */
 .home h1 span {
-    color: #2563eb;
+    color: #2563eb;              /* Makes span text blue */
 }
 
+/* Paragraph inside home section */
 .home p {
-    margin-bottom: 15px;
+    margin-bottom: 15px;         /* Space below paragraph */
 }
 
+/* Tagline / slogan text */
 .tagline {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
+    font-size: 20px;              /* Makes tagline larger */
+    font-style: italic;           /* Makes text italic */
+    font-weight: bold;            /* Makes text bold */
 }
 
+/* Main button/link */
 .button {
-    display: inline-block;
-    background-color: #2563eb;
-     color: white;
-    text-decoration: none;
-    padding: 12px 20px;
-    border-radius: 6px;
-    margin-top: 10px;
+    display: inline-block;        /* Allows padding and dimensions */
+    background-color: #2563eb;    /* Blue button background */
+    color: white;                 /* White button text */
+    text-decoration: none;        /* Removes link underline */
+    padding: 12px 20px;           /* Space inside button */
+    border-radius: 6px;           /* Rounds button corners */
+    margin-top: 10px;             /* Space above button */
 }
 
+/* Button hover effect */
 .button:hover {
-    background-color: #1d4ed8;
+    background-color: #1d4ed8;    /* Darker blue when hovered */
 }
+
+
+/* =========================================================
+   PROFILE IMAGE
+   Controls the image shown in the home section
+   ========================================================= */
 
 .profile-box {
-    text-align: center;
+    text-align: center;           /* Centers image and text */
 }
 
+/* Profile picture */
 .profile-image {
-    width: 260px;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 15px;
-    border: 5px solid white;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    margin-bottom: 15px;
+    width: 260px;                 /* Image width */
+    height: 320px;                /* Image height */
+    object-fit: cover;            /* Crops image to fit the box */
+    border-radius: 15px;          /* Rounds image corners */
+    border: 5px solid white;      /* White border around image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Adds shadow */
+    margin-bottom: 15px;          /* Space below image */
 }
 
 
-
-
+/* =========================================================
+   GENERAL SECTION STYLES
+   Used for About, Projects, Skills and Contact sections
+   ========================================================= */
 
 .section {
-     width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 70px 0;
+    width: 90%;                   /* Section uses 90% of screen */
+    max-width: 1000px;            /* Limits maximum width */
+    margin: auto;                 /* Centers section */
+    padding: 70px 0;              /* Adds top and bottom spacing */
 }
 
+/* Heading used for each section */
 .section-title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
+    text-align: center;            /* Centers heading */
+    font-size: 32px;               /* Heading size */
+    margin-bottom: 40px;           /* Space below heading */
 }
 
 
-
+/* =========================================================
+   ABOUT SECTION
+   Styles the About Me information box
+   ========================================================= */
 
 .about-box {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background-color: white;       /* White background */
+    padding: 30px;                 /* Space inside the box */
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Light shadow */
 }
 
+/* Paragraphs inside About box */
 .about-box p {
-    margin-bottom: 15px;
+    margin-bottom: 15px;             /* Space between paragraphs */
 }
 
 
+/* =========================================================
+   PROJECT SECTION
+   Creates a 3-column grid for project cards
+   ========================================================= */
 
-
-
+/* Container holding all project cards */
 .project-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    display: grid;                  /* Enables CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 25px;                      /* Space between cards */
 }
 
+/* Individual project card */
 .project-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 10px;
-    border-top: 4px solid #2563eb;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background-color: white;        /* White card background */
+    padding: 25px;                  /* Space inside card */
+    border-radius: 10px;            /* Rounded corners */
+    border-top: 4px solid #2563eb; /* Blue line at top of card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Card shadow */
 }
 
+/* Project card heading */
 .project-card h3 {
-    margin-bottom: 10px;
-    color: #1f2937;
+    margin-bottom: 10px;             /* Space below heading */
+    color: #1f2937;                  /* Dark gray heading */
 }
 
+/* Project card paragraph */
 .project-card p {
-    margin-bottom: 10px;
+    margin-bottom: 10px;             /* Space below paragraph */
 }
 
 
+/* =========================================================
+   SKILLS SECTION
+   Creates a grid containing skill cards
+   ========================================================= */
 
-
-
+/* Container for skill cards */
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    display: grid;                  /* Enables CSS Grid */
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 columns */
+    gap: 20px;                      /* Space between skill cards */
 }
 
+/* Individual skill card */
 .skill-card {
-    background-color: white;
-    padding: 25px 20px;
-    text-align: center;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
+    background-color: white;        /* White card background */
+    padding: 25px 20px;             /* Inner spacing */
+    text-align: center;             /* Centers card content */
+    border-radius: 10px;            /* Rounded corners */
+    border: 1px solid #e5e7eb;     /* Light border */
 }
 
+/* Skill name */
 .skill-card h3 {
-    color: #2563eb;
-    font-size: 24px;
-    margin-bottom: 8px;
+    color: #2563eb;                 /* Blue skill name */
+    font-size: 24px;                /* Skill heading size */
+    margin-bottom: 8px;             /* Space below heading */
 }
 
+/* Skill description */
 .skill-card p {
-    color: #666;
-    font-size: 14px;
+    color: #666;                    /* Gray text */
+    font-size: 14px;                /* Smaller text */
 }
+
+
+/* =========================================================
+   SOFT SKILLS
+   Styles the list of soft-skill tags
+   ========================================================= */
 
 .soft-skills {
-    margin-top: 35px;
-    text-align: center;
+    margin-top: 35px;               /* Space above soft skills */
+    text-align: center;              /* Centers the content */
 }
 
+/* Soft skills heading */
 .soft-skills h3 {
-    margin-bottom: 15px;
+    margin-bottom: 15px;             /* Space below heading */
 }
 
+/* Container for soft skill tags */
 .soft-skill-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
+    display: flex;                  /* Places tags in a row */
+    justify-content: center;        /* Centers tags */
+    flex-wrap: wrap;                /* Moves tags to next line if needed */
+    gap: 12px;                      /* Space between tags */
 }
 
+/* Individual soft skill tag */
 .soft-skill-list span {
-    background-color: #eaf2ff;
-    color: #1d4ed8;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 14px;
+    background-color: #eaf2ff;      /* Light blue background */
+    color: #1d4ed8;                 /* Dark blue text */
+    padding: 8px 14px;              /* Space inside tag */
+    border-radius: 20px;             /* Makes pill-shaped tags */
+    font-size: 14px;                /* Tag text size */
 }
 
 
+/* =========================================================
+   CONTACT SECTION
+   Creates two columns: contact information + form
+   ========================================================= */
 
-
+/* Main contact container */
 .contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    display: grid;                  /* Enables CSS Grid */
+    grid-template-columns: 1fr 1fr; /* Creates 2 equal columns */
+    gap: 30px;                      /* Space between columns */
 }
 
+/* Shared styling for contact information and form */
 .contact-info,
 .contact-form {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    background-color: white;        /* White background */
+    padding: 30px;                  /* Space inside boxes */
+    border-radius: 10px;            /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Light shadow */
 }
 
+/* Contact information paragraphs */
 .contact-info p {
-    margin-top: 12px;
+    margin-top: 12px;                /* Space above each paragraph */
 }
 
+/* Contact form layout */
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    display: flex;                  /* Enables Flexbox */
+    flex-direction: column;         /* Places elements vertically */
 }
 
+/* Labels above form inputs */
 .contact-form label {
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 5px;             /* Space below label */
+    font-weight: bold;              /* Makes label bold */
 }
 
+/* Text fields and message box */
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
+    width: 100%;                    /* Takes full available width */
+    padding: 12px;                  /* Space inside input */
+    margin-bottom: 15px;             /* Space below input */
+    border: 1px solid #ccc;         /* Light gray border */
+    border-radius: 5px;             /* Slightly rounded corners */
+    font-size: 15px;                /* Input text size */
 }
 
+/* Submit button */
 .contact-form button {
-    border: none;
-    background-color: #2563eb;
-    color: white;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+    border: none;                   /* Removes default button border */
+    background-color: #2563eb;     /* Blue button */
+    color: white;                  /* White text */
+    padding: 12px;                 /* Space inside button */
+    border-radius: 5px;             /* Rounded corners */
+    cursor: pointer;                /* Shows hand cursor */
+    font-size: 16px;                /* Button text size */
 }
 
+/* Submit button hover effect */
 .contact-form button:hover {
-    background-color: #1d4ed8;
+    background-color: #1d4ed8;      /* Darker blue on hover */
 }
 
 
-
+/* =========================================================
+   FOOTER
+   Styles the bottom section of the website
+   ========================================================= */
 
 footer {
-    background-color: #111827;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background-color: #111827;      /* Dark footer background */
+    color: white;                   /* White footer text */
+    text-align: center;              /* Centers footer text */
+    padding: 20px;                  /* Space inside footer */
 }
 
 
-
+/* =========================================================
+   RESPONSIVE DESIGN — TABLETS / SMALL LAPTOPS
+   Activates when screen width is 800px or less
+   ========================================================= */
 
 @media (max-width: 800px) {
 
+    /* Changes navbar from horizontal to vertical */
     .navbar {
-        flex-direction: column;
-        padding: 20px 0;
-        gap: 15px;
+        flex-direction: column;     /* Places items vertically */
+        padding: 20px 0;            /* Adds vertical spacing */
+        gap: 15px;                  /* Space between navbar items */
     }
 
+    /* Allows navigation links to wrap onto multiple lines */
     .navbar ul {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-wrap: wrap;            /* Moves links to next line */
+        justify-content: center;    /* Centers the links */
     }
 
+    /* Changes home section from row to column */
     .home {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        padding: 60px 0;
+        flex-direction: column;     /* Text goes above image */
+        text-align: center;         /* Centers text */
+        justify-content: center;    /* Centers content vertically */
+        padding: 60px 0;            /* Adds top/bottom spacing */
+        gap: 25px;                  /* Space between text and image */
     }
 
-    .home {
-        gap: 25px;
-    }
-
+    /* Makes main heading smaller on smaller screens */
     .home h1 {
         font-size: 35px;
     }
 
+    /* Makes profile image smaller */
     .profile-image {
         width: 220px;
         height: 270px;
     }
 
+    /* Changes projects from 3 columns to 1 column */
     .project-container {
         grid-template-columns: 1fr;
     }
 
+    /* Changes skills from 4 columns to 2 columns */
     .skills-list {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Changes contact section from 2 columns to 1 column */
     .contact-container {
         grid-template-columns: 1fr;
     }
 }
 
+
+/* =========================================================
+   RESPONSIVE DESIGN — MOBILE PHONES
+   Activates when screen width is 500px or less
+   ========================================================= */
+
 @media (max-width: 500px) {
+
+    /* Changes skills from 2 columns to 1 column */
     .skills-list {
         grid-template-columns: 1fr;
     }
 
+    /* Reduces section spacing on small phones */
     .section {
         padding: 55px 0;
     }
